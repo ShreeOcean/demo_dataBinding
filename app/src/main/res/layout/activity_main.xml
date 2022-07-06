@@ -6,6 +6,10 @@
     <data>
         <variable name="name" type="String"/>
         <variable name="lastName" type="String"/>
+        <variable
+            name="user"
+            type="com.ocean.databindingdemo.User" />
+
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -17,7 +21,7 @@
             android:id="@+id/tv_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{name, default = FirstName}"
+            android:text="@{user.firstname, default = FirstName}"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -28,7 +32,7 @@
             android:id="@+id/tv_last_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{lastName, default = LastName}"
+            android:text="@{user.lastname, default = LastName}"
             android:textSize="20sp"
             android:layout_marginTop="10dp"
             app:layout_constraintEnd_toEndOf="parent"
