@@ -21,7 +21,8 @@ public class MainActivity extends AppCompatActivity {
 
         mainViewModel = ViewModelProviders.of(this).get(MainViewModel.class);
 
-        binding.setUser(mainViewModel.getUser());
+        binding.setViewModelUser(mainViewModel);
+        //binding.setUser(mainViewModel.getUser());
 //        binding.setName("This is First Name");
 //        binding.setLastName("This is Last Name");
 
