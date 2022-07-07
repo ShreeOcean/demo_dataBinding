@@ -12,7 +12,7 @@ public class MainViewModel extends AndroidViewModel {
     public MainViewModel(@NonNull Application application) {
         super(application);
 
-        user = new User("ocean", "shree");
+        user = new User("ocean", "shree", 28);
 
     }
     public User getUser(){

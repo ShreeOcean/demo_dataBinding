@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout
-    xmlns:bind="http://schemas.android.com/apk/res-auto"
+
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <data>
-
+        <variable
+            name="secondLayoutViewModel"
+            type="com.ocean.databindingdemo.MainViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

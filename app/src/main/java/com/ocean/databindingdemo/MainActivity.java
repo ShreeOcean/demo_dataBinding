@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 //        binding.setName("This is First Name");
 //        binding.setLastName("This is Last Name");
 
-        binding.includeLayout2.tvAge.setText("29");
+        //binding.includeLayout2.tvAge.setText("29");
 
 
     }

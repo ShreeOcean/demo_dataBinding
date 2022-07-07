@@ -3,14 +3,16 @@ package com.ocean.databindingdemo;
 public class User {
 
     private String firstname;
-    private String Lastname;
+    private String lastname;
+    private int age;
 
-    public User() {
+    public User(String firstname, String lastname, int age) {
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.age = age;
     }
 
-    public User(String firstname, String lastname) {
-        this.firstname = firstname;
-        Lastname = lastname;
+    public User() {
     }
 
     public String getFirstname() {
@@ -22,10 +24,18 @@ public class User {
     }
 
     public String getLastname() {
-        return Lastname;
+        return lastname;
     }
 
     public void setLastname(String lastname) {
-        Lastname = lastname;
+        this.lastname = lastname;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 }
