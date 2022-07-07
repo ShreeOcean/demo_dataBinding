@@ -21,10 +21,16 @@ public class MainActivity extends AppCompatActivity {
 
         mainViewModel = ViewModelProviders.of(this).get(MainViewModel.class);
 
+
+        /** Basically static data binding*/
         binding.setViewModelUser(mainViewModel);
-        //binding.setUser(mainViewModel.getUser());
+
+        /** using set get through viewModel method */
+        binding.setUser(mainViewModel.getUser());
 //        binding.setName("This is First Name");
 //        binding.setLastName("This is Last Name");
+
+        binding.includeLayout2.tvAge.setText("29");
 
 
     }
